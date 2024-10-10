@@ -10,6 +10,8 @@
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
+            min-height: 100vh;
+            position: relative;
         }
         header {
             text-align: center;
@@ -22,6 +24,7 @@
         }
         section {
             margin: 20px 0;
+            padding-bottom: 60px; /* Added space at the bottom of the content */
         }
         .project {
             background-color: white;
@@ -35,13 +38,14 @@
         }
         footer {
             text-align: center;
-            padding: 10px;  /* Adjusted for smaller size */
+            padding: 10px;
             background-color: #333;
             color: white;
-            position: fixed;
+            position: absolute;
             width: 100%;
             bottom: 0;
-            font-size: 14px;  /* Adjusted font size */
+            font-size: 14px;
+            height: 40px;
         }
     </style>
 </head>
@@ -92,6 +96,8 @@
     </footer>
 </body>
 </html>
+
+
 
 
 
