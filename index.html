@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Science Portfolio</title>
+    <title>Data Science Portfolio: Chazin Brahma </title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f4f4f4;
-            min-height: 100vh;
-            position: relative;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            text-align: center;
             background-color: #333;
-            color: white;
-            padding: 20px;
+            color: #fff;
+            padding: 10px 0; 
+            text-align: center;
         }
-        h1 {
+        header h1 {
             margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            background-color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
         }
         section {
-            margin: 20px 0;
-            padding-bottom: 60px; /* Added space at the bottom of the content */
+            padding: 10px 0; 
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #about {
+            margin-bottom: 10px;  
+        }
+        #projects {
+            margin-top: 10px; 
         }
         .project {
             background-color: white;
@@ -35,67 +56,109 @@
         }
         .project h2 {
             margin-top: 0;
+            color: #333;
+        }
+        .project p {
+            color: #666;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .skills {
+            background-color: #eee;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .skills h2 {
+            margin-top: 0;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 10px; 
             background-color: #333;
             color: white;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            font-size: 14px;
-            height: 40px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>My Data Science Portfolio</h1>
-    </header>
 
-    <section>
-        <!-- Project 1: Loan Default Prediction -->
-        <div class="project">
-            <h2>Loan Default Prediction</h2>
-            <p>This project builds a model to predict the likelihood of loan default using customer demographic and financial data. It involves data preprocessing, feature selection, and the implementation of classification models such as Random Forest and Logistic Regression.</p>
-            <a href="https://github.com/chazbrahma/LoanDefault">View Project</a>
-        </div>
+<header>
+    <h1>Chazin Brahma - Data Scientist</h1>
+    <p>Specializing in Predictive Modeling, Machine Learning, and Data-Driven Decision Making</p>
+    <a href="https://github.com/chazbrahma/portfolio-website/raw/main/Cv.pdf" download>Download My CV</a>
+</header>
 
-        <!-- Project 2: Thesis -->
-        <div class="project">
-            <h2>Thesis</h2>
-            <p>A simulation of a network using the Bornholdt model to analyze social and physical systems. This project explores dynamic network theory and its applications in modeling real-world network behaviors.</p>
-            <a href="https://github.com/chazbrahma/Thesis">View Project</a>
-        </div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate data scientist with experience in machine learning, predictive modeling, and data visualization. My expertise spans across various industries, where I've applied my skills to optimize business outcomes and solve complex problems.</p>
+</section>
 
-        <!-- Project 3: Stock Market Prediction  -->
-        <div class="project">
-            <h2>Stock Market Prediction</h2>
-            <p>This earlier version of the stock market prediction project focuses on the exploration of various machine learning models such as decision trees, support vector machines (SVMs), and simple linear regression.</p>
-            <a href="https://github.com/chazbrahma/Stock-Price-Predicition">View Project</a>
-        </div>
+<section id="projects">
+    <h2>Projects</h2>
 
-        <!-- Project 4: Customer Segmentation -->
-        <div class="project">
-            <h2>Customer Segmentation</h2>
-            <p>This project involves building a classification model to predict credit scores based on customer financial data. Techniques like decision trees and logistic regression are used in this project.</p>
-            <a href="https://github.com/chazbrahma/Customer-segmentation">View Project</a>
-        </div>
+    <!-- Project 1: Stock Market Dynamics -->
+    <div class="project">
+        <h2>Stock Market Dynamics Using the Bornholdt Model and Various Network Topologies</h2>
+        <p>Simulating stock market dynamics using the Bornholdt model, this project explores how different network topologies (e.g., Barabási–Albert, Watts–Strogatz) influence market behavior and investor interactions.</p>
+        <a href="https://github.com/chazbrahma/Thesis">View Project</a>
+    </div>
 
-        <!-- Project 5: Portfolio Optimization -->
-        <div class="project">
-            <h2>Portfolio Optimization</h2>
-            <p>A data-driven approach to optimizing an investment portfolio by balancing risk and return using modern portfolio theory. The project explores the use of Monte Carlo simulations and efficient frontier analysis.</p>
-            <a href="https://github.com/chazbrahma/Portfolio-Optimisation">View Project</a>
-        </div>
-    </section>
+    <!-- Project 2: Loan Default Prediction -->
+    <div class="project">
+        <h2>Loan Default Prediction</h2>
+        <p>Predicting loan defaults using decision tree classifiers. This project provides actionable insights for lenders by analyzing borrower data and predicting the risk of loan defaults.</p>
+        <a href="https://github.com/chazbrahma/LoanDefault">View Project</a>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Data Science Portfolio</p>
-    </footer>
+    <!-- Project 3: Stock Market Prediction -->
+    <div class="project">
+        <h2>Stock Market Prediction Using Machine Learning</h2>
+        <p>A machine learning model that predicts stock prices using regression techniques and advanced feature engineering (e.g., Bollinger Bands, Moving Averages).</p>
+        <a href="https://github.com/chazbrahma/Stock-Price-Predicition">View Project</a>
+    </div>
+
+    <!-- Project 4: Customer Segmentation -->
+    <div class="project">
+        <h2>Customer Segmentation for Banks</h2>
+        <p>Segmenting a bank's customer base using K-Means clustering to optimize marketing strategies and reduce churn. This project provides insights into customer behavior and demographics.</p>
+        <a href="https://github.com/chazbrahma/Customer-segmentation">View Project</a>
+    </div>
+
+    <!-- Project 5: Portfolio Optimization -->
+    <div class="project">
+        <h2>Portfolio Optimization</h2>
+        <p>Optimizing an investment portfolio using modern portfolio theory, Monte Carlo simulations, and efficient frontier analysis to balance risk and return.</p>
+        <a href="https://github.com/chazbrahma/Portfolio-Optimisation">View Project</a>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Programming Languages: Python, R, SQL</li>
+        <li>Machine Learning: Scikit-learn</li>
+        <li>Data Visualization: Matplotlib, Seaborn, Plotly</li>
+        <li>Statistical Analysis: Hypothesis Testing, Regression Analysis</li>
+        <li>Data Wrangling: Pandas, NumPy</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 [Your Name] - All Rights Reserved</p>
+    <p><a href="mailto:chazinbrahma0@gmail.com">Contact Me</a></p>
+</footer>
+
 </body>
 </html>
+
+
 
 
 
